@@ -1,4 +1,4 @@
-package august.week1;
+package september.week2;
 
 import java.util.LinkedList;
 import java.util.Queue;

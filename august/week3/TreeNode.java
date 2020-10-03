@@ -1,12 +1,12 @@
-package august.week1;
+package august.week3;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class TreeNode {
 	Object val;
-	public TreeNode left;
-	public TreeNode right;
+	TreeNode left;
+	TreeNode right;
 
 	TreeNode() {
 	}
