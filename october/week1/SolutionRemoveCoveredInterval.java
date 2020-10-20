@@ -25,7 +25,6 @@ public class SolutionRemoveCoveredInterval {
 
 	public static void main(String[] args) {
 		SolutionRemoveCoveredInterval sol = new SolutionRemoveCoveredInterval();
-		System.out.println(~ 5);
 		System.out.println(sol.removeCoveredIntervals(new int[][] { { 1, 4 }, { 2, 3 } }));
 	}
 

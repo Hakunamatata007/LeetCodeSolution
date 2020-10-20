@@ -1,8 +1,5 @@
 package july_week3;
 
-import java.util.HashSet;
-import java.util.Set;
-
 class Trie {
 	public Trie[] children;
 	public Boolean isEndOfWord;

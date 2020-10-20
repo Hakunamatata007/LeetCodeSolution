@@ -1,7 +1,5 @@
 package september.week4;
 
-import java.util.Arrays;
-
 public class SolutionNumSubarrayProductLessThanK {
 
 	public int numSubarrayProductLessThanK(int[] nums, int k) {

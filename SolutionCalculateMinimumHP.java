@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class SolutionCalculateMinimumHP {
 
 	static int[][] memo;// memorization
@@ -8,8 +6,9 @@ public class SolutionCalculateMinimumHP {
 		int rows = dungeon.length;
 		int cols = dungeon[0].length;
 		memo = new int[rows][cols];
+		return 0;
 
-		return dfs(dungeon, rows, cols, 0, 0, 0);
+		// return dfs(dungeon, rows, cols, 0, 0, 0);
 	}
 
 	static int recur(int[][] dungeon, int rows, int cols, int i, int j, int sum) {
@@ -42,7 +41,7 @@ public class SolutionCalculateMinimumHP {
 			recur(dungeon, rows, cols, i - 1, j, sum + dungeon[i][j]);
 			return cost;
 		}
-Math.pow(2, 2);
+		Math.pow(2, 2);
 		int cost;
 		if (sum >= 0)
 			cost = dungeon[i][j] >= 0 ? 0 : 1 - dungeon[i][j];

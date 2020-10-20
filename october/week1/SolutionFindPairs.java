@@ -2,7 +2,6 @@ package october.week1;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class SolutionFindPairs {
 

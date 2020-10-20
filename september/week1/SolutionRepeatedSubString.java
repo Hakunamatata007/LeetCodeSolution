@@ -1,8 +1,5 @@
 package september.week1;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class SolutionRepeatedSubString {
 
 	public boolean repeatedSubstringPattern(String s) {

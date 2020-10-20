@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class SolutionUglyNumber2 {
 
 	static int nthUglyNumber(int n) {

@@ -1,8 +1,5 @@
 package september.week3;
 
-import java.util.Arrays;
-import java.util.Comparator;
-
 public class SolutionCarPooling {
 
 	public boolean carPooling(int[][] trips, int capacity) {

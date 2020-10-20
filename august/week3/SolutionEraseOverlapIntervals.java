@@ -1,8 +1,5 @@
 package august.week3;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class SolutionEraseOverlapIntervals {
 
 	public int eraseOverlapIntervals(int[][] intervals) {

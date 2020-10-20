@@ -1,7 +1,5 @@
 package july_week3;
 
-import java.util.Arrays;
-
 public class SolutionReverseWords {
 
 	static String reverseWords(String s) {

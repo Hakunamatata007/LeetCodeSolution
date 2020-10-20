@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.Iterator;
-
 public class SolutionHammingDistance {
 
 	static int hammingDistance(int x, int y) {
