@@ -28,28 +28,23 @@ class Node {
 public class SolutionCloneGraph {
 
 	public Node cloneGraph(Node node) {
-
-		List<Node> list = new ArrayList<>();
-		Map<Integer, Boolean> visited = new HashMap<>();
-
-		return node;
+		if (node == null)
+			return null;
+		Map<Node, Node> visited = new HashMap<>();
+		return cloning(node, visited);
 	}
 
-	private Node cloning(Node node, Map<Integer, Boolean> visited) {
+	private Node cloning(Node node, Map<Node, Node> visited) {
 
-		if (!visited.get(node.val))
-			return;
-		List<Node> neighbors = node.neighbors;
-		Node clonedNode = new Node(node.val);
-		List<Node> clonedNeighbors = new ArrayList<>();
+		visited.put(node, new Node(node.val, new ArrayList<>()));
 
-		for (int i = 0; i < neighbors.size(); i++) {
-			visited.put(neighbors.get(i).val, true);
-			Node cloning = cloning(neighbors.get(i), visited);
-			clonedNeighbors.add(cloning);
+		for (Node neighbor : node.neighbors) {
+			if (visited.containsKey(neighbor))
+				visited.get(node).neighbors.add(visited.get(neighbor));
+			else
+				visited.get(node).neighbors.add(cloneGraph(neighbor));
 		}
-		clonedNode.neighbors = clonedNeighbors;
-		return clonedNode;
+		return visited.get(node);
 	}
 
 	public static void main(String[] args) {
