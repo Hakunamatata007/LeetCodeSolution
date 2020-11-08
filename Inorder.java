@@ -5,7 +5,7 @@ public class Inorder {
 
 		int start = 0;
 		int pos_0 = 0;
-		int pos_2 = nums.length - 1;
+		int pos_2 = nums.length - 1; 
 		while (start <= pos_2) {
 			if (nums[start] == 2) {
 				swap(nums, start, pos_2);
